@@ -1,0 +1,37 @@
+
+
+
+a.special{
+    color: red;
+}
+
+main{
+    background-color: lightgray;
+}
+
+#box-1{
+    background-color: yellow;
+    border: 1px solid blue;
+}
+
+.selected{
+    font-size: 18px;
+}
+
+.list-section ul li:last-child{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer-text:hover{
+color: blueviolet;
+}

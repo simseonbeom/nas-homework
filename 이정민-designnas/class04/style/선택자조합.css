@@ -1,0 +1,60 @@
+
+/* css에서 뛰어쓰기 : ~ 안에 있는 */
+
+.list{
+    background-color: dodgerblue;
+}
+
+
+/* 자식 선택자  "리스트 클래스 안에 있는 첫번째 자식 li를 좀 찾아봐"*/
+
+/* 친자식 선택자 ">" 앵글브라켓 넣어주면 됨 */
+
+.list > li:nth-child(1){
+    background-color: hotpink;
+}
+
+
+/* 리스트 클래스 안에 있는 메뉴 클래스 찾기 띄어쓰기 */
+/* .list .menu{
+    background-color: orange;
+}
+ */
+
+
+/* 리스트 클래스 안에 있는 친자식 메뉴 클래스 찾기 */
+/* .list > .menu{
+    background-color: orange;
+} */
+
+
+/* 리스트 클래스와 메뉴 클래스를 함께 가지고 있는 대상을 찾자! 띄어쓰기를 하지 않음 */
+.list.menu{
+    background-color: orange;
+}
+
+#depth{
+    background-color: greenyellow;
+}
+
+.menu{
+    background-color: darkblue !important;
+}
+
+
+div.menu{
+    background-color: salmon;
+}
+
+
+/* css  nesting */
+.container{
+    .paragraph{
+        background-color: orange;
+
+        &:hover{
+            background-color: green;
+        }
+    }
+
+}

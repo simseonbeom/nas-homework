@@ -1,0 +1,42 @@
+/* 태그 선택자 */
+div{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin-bottom: 10px;
+
+}
+
+
+/* 아이디 선택자 */
+#box{
+    background-color: dodgerblue;
+}
+
+
+/* 클래스 선택자 */
+.box{
+    background-color: hotpink;
+}
+
+
+/* 속성 선택자 */
+div[name=tiger]{
+    background-color: red;
+}
+
+
+/* 가상 선택자 */
+.box:hover{
+    background-color: black;
+} /* 클래스만 적용 */
+
+div:hover{
+    background-color: black;
+} /* 전체 적용 */
+
+a:visited{
+    color:red
+} /* 방문했을 때 링크를 빨간색으로 */
+
+

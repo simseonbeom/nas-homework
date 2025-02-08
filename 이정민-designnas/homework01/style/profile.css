@@ -1,0 +1,157 @@
+/* 
+.box{
+    display: flex;
+    align-items: center;
+    width: 600px;
+} */
+
+/* .box-inner img{
+    display: block;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+ */
+
+.box-inner {
+  display: flex;
+  align-items: center;
+}
+
+.box-inner img {
+  width: 25%;
+  height: auto;
+  margin-right: 5px;
+  border-radius: 7px;
+  box-shadow: 10px 10px 0 gainsboro;
+}
+
+.title {
+  padding: 0 30px;
+  width: 50%;
+  color: sandybrown;
+  margin-left: 30px;
+}
+
+h2 {
+  color: white;
+  background-color: sandybrown;
+  padding: 5px 10px;
+  font-size: 30px;
+  max-width: 320px;
+  font-family: "Archivo Black";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content {
+  color: sandybrown;
+  font-size: 20px;
+}
+
+.content-2 img {
+  width: 5%;
+  margin-top: 20px;
+}
+
+.content-2 {
+  font-size: 18px;
+  display: inline;
+  color: black;
+}
+
+.content-3 img {
+  width: 5%;
+}
+
+.content-3 {
+  font-size: 18px;
+  line-height: 2;
+  display: inline;
+  color: black;
+}
+
+h3 {
+  font-size: 22px;
+  color: gold;
+}
+
+/* .block-1::after{
+    display: block;
+    clear: both;
+    
+}
+ */
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-inline: 30px;
+}
+.block img {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.block-inner {
+  /* width: 25%; */
+  margin-right: 2%;
+  padding: 1rem 1rem 1.5rem 1rem;
+  /* float: left;  */
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  margin-bottom: 3rem;
+  border-radius: 7px;
+}
+
+/* .block-inner:nth-child(3n){
+    margin-right: 0;
+} */
+
+.block-inner img {
+  width: 85%;
+  display: block;
+  border-radius: 5px;
+}
+
+.block-inner p {
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  line-height: 0.8;
+}
+
+.block-1 .text2 {
+  color: brown;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.block-1 .text {
+  color: brown;
+  font-size: 20px;
+}
+
+.block-2 .text2 {
+  color: teal;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.block-2 .text {
+  color: teal;
+  font-size: 20px;
+}
+
+.block-3 .text2 {
+  color: navy;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.block-3 .text {
+  color: navy;
+  font-size: 20px;
+}

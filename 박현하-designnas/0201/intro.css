@@ -1,0 +1,101 @@
+.img1 {
+  display: flex;
+  /* margin-left: 400px; */
+  /* margin: 0 auto; */
+}
+
+.container {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+}
+
+.phone {
+  background-color: #ffdd80;
+}
+
+h1 {
+  text-align: center; /* 수평 중앙 정렬 */
+  margin-bottom: 30px;
+}
+
+.my li {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.text_01,
+.text_02,
+.text_03 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #191919;
+  color: white;
+  height: 300px;
+}
+
+.web {
+  /* margin-left: 420px; */
+  margin-top: -10px;
+  font-weight: normal;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  /* margin-left: 420px; */
+  align-items: center;
+}
+
+.list2 {
+  list-style: none;
+  display: flex;
+  /* margin-left: 420px; */
+  align-items: center;
+}
+
+.Tool {
+  font-size: 30px;
+  margin-right: 80px;
+}
+
+.Contact {
+  font-size: 30px;
+  margin-right: 37px;
+}
+
+/* Figma, Photoshop, Illustrator, Premiere Pro에만 hover 효과 적용 */
+.Figma:hover,
+.Photoshop:hover,
+.Illustrator:hover,
+.Premiere:hover {
+  color: #ffdd80;
+}
+
+.E-mail:hover,
+.Phone:hover,
+.Instagram:hover,
+.Facebook:hover {
+  color: #ffa743;
+}
+
+.description {
+  margin-bottom: 40px;
+}
+/* font */
+
+.footer {
+  display: flex;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

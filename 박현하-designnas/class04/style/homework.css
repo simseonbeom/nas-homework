@@ -1,0 +1,38 @@
+
+
+
+.accent {
+   color: red;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+
+.special {
+   color: red;
+}
+
+
+main{
+    background-color: rgb(191, 191, 191);
+}
+
+#box-1{
+    background-color: yellow;
+    border: 2px solid blue; 
+}
+
+.selected{
+    font-size: 20px;
+}
+
+ul li:last-child {
+    text-decoration: underline;
+}
+
+.footer-text:hover {
+    color: yellow;
+    background-color: black;
+}
