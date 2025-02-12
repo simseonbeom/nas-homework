@@ -1,0 +1,24 @@
+
+
+body{
+    height: 5000px;
+}
+
+.bg{
+    width: 100px;
+    height: 100px;
+    /* 백그라운드 이미지는 말 그대로 배경 이미지라 컨텐츠 크기에 영향을 주지 않음, 배경처리가 필요한 이미지에만 사용 */
+    background-image: url('../chill.webp');
+    /* 박스 안에 모든 이미지가 들어오도록 */
+    /* background-size: contain; */
+    /* 이미지가 반복될 때 반복되지 않고 하나만 나오도록 */
+    background-repeat: no-repeat;
+    /* 커버는 대충 그냥 맞춰주는 것, 잘리는 부분이 있더라도 */
+    background-size: cover;
+    /* 앞에가 x축 뒤가 y축 */
+    /* background-position: 10px 10px; */
+    /* 이미지 가운데를 찾아줌 */
+    background-position: center;
+    /* 배경 고정시키는 거 */
+    background-attachment: fixed;
+}

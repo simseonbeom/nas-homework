@@ -1,0 +1,102 @@
+
+body{
+    background-color: #F9F5EF; /* 원하는 배경색 */
+    overflow: hidden;
+}
+.bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .menu{
+    /* font-size: 5rem; */
+    scale:10
+  }
+/* 전체 화면을 채우는 컨테이너 */
+.container {
+    position: relative; /* 배경과 텍스트 정렬을 위한 부모 요소 */
+    height: 100vh; /* 화면 전체 높이 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 세로 중앙 정렬 */
+    align-items: center; /* 가로 중앙 정렬 */
+}
+
+
+
+/* 폰트 바꾸는 방법, .flower 사이즈 강제로 늘리면 깨짐 */
+/* 타이틀 애니메이션 */
+.title {
+    font-size: 10rem;
+    position: absolute;
+    white-space: nowrap; /* 줄바꿈 방지 */
+    top: 0;
+    right: 100%; /* 시작 위치 */
+    transform: translateY(-50%);
+    animation: moveRight 10s linear infinite;
+    
+
+}
+
+/* 애니메이션 키프레임 */
+@keyframes moveRight {
+    from {
+        right: -50%;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+
+.subtitle-container-left {
+    position: absolute;
+    top: 200px; /* h1 아래 위치 조정, 픽셀 지정? */
+    left: 20px; /* 오른쪽에서부터의 거리 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 왼쪽 정렬 */
+    font-size: 13px;
+}
+
+.subtitle-left {
+    display: block; 
+    margin-bottom: 1px; /* 줄 간격 조정 */
+
+}
+.subtitle-container-right {
+    position: absolute;
+    top: 200px; /* h1 아래 위치 조정 */
+    right: 20px; /* 오른쪽에서부터의 거리 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    font-size: 13px;
+}
+
+.subtitle-right {
+    display: block; 
+    margin-bottom: 1px; /* 줄 간격 조정 */
+
+}
+
+
+.popup {
+    width: 400px;
+    height: 600px;
+    background-color: rgb(146, 223, 30);
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    padding: 20px;
+    text-align: center;
+}
+
+.pop-title {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+}
+
+  

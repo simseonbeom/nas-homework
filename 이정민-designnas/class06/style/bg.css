@@ -1,0 +1,12 @@
+
+
+.bg{
+    width: 100px;
+    height: 100px;
+    background-image: url(' ../chill.webp');
+/*     background-size: contain; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

@@ -1,102 +1,213 @@
 body {
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    margin: 50px;
-    background-color: #f4f4f4;
-    animation: fadeIn 1.5s ease-in-out;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 50px;
+  background-color: #1e1e1e;
+  animation: fadeIn 1.5s ease-in-out;
+  position: relative;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 반투명 검은 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  margin: 10px;
+
+  background-color: dodgerblue;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  max-width: 80%;
+}
+
+#popup-toggle {
+  cursor: pointer;
+  display: none; /* 체크박스 숨김 */
+}
+
+/* 체크박스가 체크되었을 때 팝업 숨김 */
+#popup-toggle:checked + .popup-overlay {
+  display: none;
+}
+
+/* .close-btn{
+    width: 5px;
+    height: 5px;
+    padding: 10px;
+    background-color: #fff;
+}   */
+
+.popup_title {
+  margin: 20px;
+}
+
+.popupText {
+  margin: 30px;
+  color: #fcfcfd;
+}
+
+.close-btn {
+  margin: 20px;
+}
+
+.pp {
+  display: flex;
 }
 
 .container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: auto;
-    transform: scale(0.9);
-    animation: popUp 0.5s ease-in-out forwards;
+  position: sticky;
+  top: 20px;
+  background: #17191c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  max-width: 500px;
+  transform: scale(0.9);
+  animation: popUp 0.5s ease-in-out forwards;
 }
 @keyframes popUp {
-    from { transform: scale(0.9); }
-    to { transform: scale(1); }
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: transform 0.3s;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s;
 }
+/* 클래스 추가서 속ㅇ성 적용하도록 변경하기 */
 img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-h1 {
-    color: #333;
+.header1 {
+  color: #fcfcfd;
 }
-p {
-    color: #666;
-}
-.social-links a {
-    color: #0073e6;
-    margin: 0 10px;
-    transition: color 0.3s;
-    position: relative;
+.header2 {
+  color: #d5d7dc;
 }
 
-.social-links a::after{
-    content: '';
-    width: 1px;
-    height: 20px;
-    background: #000;
-    position: absolute;
-    right:-12px;
-    
+.maintext {
+  color: #666;
 }
-.social-links a:last-child::after{
-    display: none;
+
+.social-links a::after {
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  right: -12px;
+}
+.social-links {
+  margin: 10px 10px;
+}
+
+.social-links a:last-child::after {
+  display: none;
+}
+
+.social-links a {
+  color: #0073e6;
+  margin: 0 10px;
+  transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #ff6600;
+  color: #ff6600;
 }
+
 .skills {
-    margin-top: 20px;
+  margin-top: 20px;
 }
+
 .skills ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
+
 .skills li {
-    background: #ddd;
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 5px;
-    transition: background 0.3s;
+  background: #ddd;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
+
 .skills li:hover {
-    background: #0073e6;
-    color: white;
+  background: #0073e6;
+  color: white;
 }
+
 .contact-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #0073e6;
-    color: white;
-    border-radius: 5px;
-    transition: background 0.3s, transform 0.3s;
+  display: inline-block;
+  margin-block-start: 20px;
+  padding: 10px 20px;
+  background: #0073e6;
+  color: white;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
 }
+
 .contact-btn:hover {
-    background: #ff6600;
-    transform: scale(1.1);
+  background: #ff6600;
+  transform: scale(1.1);
 }
+
 .phone {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #333;
+  margin-block-start: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.inner {
+  background: #17191c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-inline: 20px;
+}
+
+.innercontent {
+  color: #d5d7dc;
+  background-color: #232529;
+  border-radius: 5px;
+  max-width: 500px;
+  padding: 100px 200px;
+  margin: 10px;
 }

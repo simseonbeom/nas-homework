@@ -18,10 +18,14 @@ main{
     font-size: 18px;
 }
 
-.list-section ul li:last-child{
+.list-section ul li:nth-child(3){
     text-decoration: underline;
 }
 
+
+.list-section ul li:last-child{
+    text-decoration: underline;
+}
 
 
 

@@ -1,19 +1,15 @@
 
 
 
-.accent {
-   color: red;
-}
-
-.mb-10{
-    margin-bottom: 10px;
+.nav-item.special {
+color: red;
 }
 
 
-.special {
-   color: red;
-}
-
+/* 강조할 때 html코드에 accent 붙여서 빠르게 강조 가능
+.accent{
+    color: red;
+} */
 
 main{
     background-color: rgb(191, 191, 191);
