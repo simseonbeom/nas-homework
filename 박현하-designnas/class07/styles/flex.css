@@ -1,0 +1,84 @@
+
+
+.container{
+    /* 가로 영역 다 쓰겠다
+    width: 100vw;
+    세로 영역 다 쓰겠다
+    width: 100vh; */
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    padding: 1rem;
+    /* 가로 배치를 주고 싶은 대상의 부모에게 선언 */
+    display: flex;
+    /* 메인축 */
+    /* 기본값
+    flex-direction: row; */
+    /* 세로배치 */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+
+
+
+    /* 서브축 세로 정렬이고 나머진 위와 동일*/
+    align-items: center;
+    gap: 10px;
+
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate:-50% -50%;
+
+
+    .box{
+        width: 100px;
+        /* 부모 크기 따라감 */
+        height: 100%;
+        background-color: dodgerblue;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3rem;
+        /* 비율 */
+        /* margin-right: 10px; */
+        /* margin: 0 auto 40px 10px; */
+
+        transition: all .5s;
+
+
+        &:nth-child(1){
+            background-color: red;
+            /* 부모 크기가 늘어나거나 줄어듦에 따라서 같이 변형됨 */
+            /* 플렉스 1은 각각의 비율대로 나눠가지게 됨, 쩜오도 가능 */
+            flex: 1;
+            /* 부드럽게, all은 바뀌는 모든 것, 1s는 1초동안 */
+
+        }
+
+        
+
+        &:nth-child(2){
+            background-color: orange;
+            flex: 1;
+        }
+
+        &:nth-child(3){
+            background-color: green;
+            flex: 1;
+
+        }
+
+
+        &:hover{
+            flex: 3;
+        }
+    }
+}
+
+
+
+
